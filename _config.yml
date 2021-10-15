@@ -1,16 +1,16 @@
-name: Luciano Braga
-description: Desenvolvedor Web
-meta_description: "Desenvolvedor web Luciano Braga"
+name: Lucas Souza
+description: Cybersecurity Research
+meta_description: "Cybersecurity Research"
 
 markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
 baseurl: '/'
-domain_name: 'https://lucianobragaweb.github.io'
+domain_name: 'https://lsass.io'
 google_analytics: 'UA-XXXXXXXX-X'
 gems: [jekyll-paginate]
 
 # Details for the RSS feed generator
-url:            'https://lucianobragaweb.github.io'
-author:         'Luciano Braga'
+#url:            'https://lucianobragaweb.github.io'
+#author:         'Luciano Braga'
