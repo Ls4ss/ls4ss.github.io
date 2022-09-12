@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
+    width: 100%;
+    height: 400px;
     background: url('../images/wp.png');
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -49,7 +51,7 @@ i.fa {
 
 .link {
     display: block;
-    background-color: rgba(6, 19, 62, 0.81);
+    background-color: rgba(0, 7, 46, 0.81);
     color: #fff;
     text-align: center;
     margin-bottom: 20px;
