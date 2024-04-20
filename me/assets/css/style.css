@@ -10,8 +10,8 @@ body {
 }
 
 #userPhoto {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin: 10px auto;
     border-radius: 200px;
