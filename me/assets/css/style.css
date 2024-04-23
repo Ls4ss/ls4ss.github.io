@@ -34,13 +34,14 @@ body {
 
 #userName p {
     font-weight: 300;
-    margin-top: 5px;
+    margin-top: -20px;
     text-transform: none;
 }
 
 i.fa {
     margin-right: 0.3rem;
 }
+
 
 #links {
     max-width: 500px;
@@ -62,6 +63,30 @@ i.fa {
     transition: all .25s cubic-bezier(.08, .59, .29, .99);
     border-radius: 10px;
 
+
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #3b5998; /* Azul do Facebook */
+    color: #fff; /* Cor do ícone */
+    text-align: center;
+    line-height: 40px; /* Centraliza verticalmente */
+    border-radius: 50%; /* Forma circular */
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 30px; /* Espaçamento à direita */
+	margin-bottom: 20px;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.social-icon:hover {
+    background-color: #E80182; /* Altera a cor do fundo ao passar o mouse */
+}
+
+.container {
+    text-align: center; /* Centraliza os ícones horizontalmente */
 }
 
 .link:hover {
