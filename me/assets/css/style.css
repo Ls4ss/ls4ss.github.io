@@ -4,9 +4,10 @@
 body {
     width: 100%;
     height: 400px;
-    background: url('../images/wp.png');
+    background: url('../images/bg.png');
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
+	
 }
 
 #userPhoto {
@@ -14,6 +15,7 @@ body {
     height: 150px;
     display: block;
     margin: 5px auto;
+	margin-top: 20vh;
     border-radius: 200px;
 }
 
@@ -44,7 +46,7 @@ i.fa {
 
 
 #links {
-    max-width: 500px;
+    max-width: 400px;
     width: auto;
     display: block;
     margin: 20px auto;
@@ -77,7 +79,7 @@ i.fa {
     border-radius: 50%; /* Forma circular */
     font-size: 20px; /* Tamanho do ícone */
     margin-right: 30px; /* Espaçamento à direita */
-    margin-bottom: 20px;
+	margin-bottom: 20px;
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
