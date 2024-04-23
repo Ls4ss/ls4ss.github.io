@@ -77,7 +77,7 @@ i.fa {
     border-radius: 50%; /* Forma circular */
     font-size: 20px; /* Tamanho do ícone */
     margin-right: 30px; /* Espaçamento à direita */
-	margin-bottom: 20px;
+    margin-bottom: 20px;
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
