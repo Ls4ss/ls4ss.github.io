@@ -72,7 +72,7 @@ i.fa {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #3b5998; /* Azul do Facebook */
+    background-color: #ff0000; /* Azul do Facebook */
     color: #fff; /* Cor do ícone */
     text-align: center;
     line-height: 40px; /* Centraliza verticalmente */
@@ -84,7 +84,7 @@ i.fa {
 }
 
 .social-icon:hover {
-    background-color: #E80182; /* Altera a cor do fundo ao passar o mouse */
+    background-color: #520404; /* Altera a cor do fundo ao passar o mouse */
 }
 
 .container {
