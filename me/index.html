@@ -19,12 +19,43 @@
             min-height: 100vh;
         }
 
+        .container {
+            text-align: center;
+        }
+
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             border: 4px solid #ff4444;
             box-shadow: 0 0 15px rgba(255, 68, 68, 0.7);
+            z-index: 1;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff4444, #a30000);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 50%;
+            margin: 0 10px;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        .social-icon:hover {
+            background: linear-gradient(135deg, #a30000, #ff4444);
+            transform: scale(1.2);
         }
 
         h1 {
@@ -71,27 +102,26 @@
 <body>
     <div class="container">
         <img src="assets/images/Ls_profileV2.png" alt="Profile Picture" class="profile-pic">
+        <div class="social-icons">
+            <a class="social-icon" href="https://www.exploit-db.com/?author=11020" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i></a>
+            <a class="social-icon" href="https://github.com/Ls4ss" target="_blank"><i class="fa fa-github"></i></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/ls4ss/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a class="social-icon" href="https://www.instagram.com/lucassouza.io/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="social-icon" href="https://x.com/L50uz4" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
         <h1>Lucas S.</h1>
         <h2>Cybersecurity | Offensive Security</h2>
-		<div class="container">
-			<a class="social-icon" href="https://www.exploit-db.com/?author=11020" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i></a>
-			<a class="social-icon" href="https://github.com/Ls4ss" target="_blank"><i class="fa fa-github"></i></a>
-			<a class="social-icon" href="https://www.linkedin.com/in/ls4ss/" target="_blank"><i class="fa fa-linkedin"></i></a>
-			<a class="social-icon" href="https://www.instagram.com/lucassouza.io/" target="_blank"><i class="fa fa-instagram"></i></a>
-			<a class="social-icon" href="https://x.com/L50uz4" target="_blank"><i class="fa fa-twitter"></i></a>
-		</div>
 
         <div class="buttons">
             <a href="https://lucassouza.io/blog/" target="_blank"><i class="fa fa-flask"></i> Projetos & Pesquisas</a>
-            <a href="https://lucassouza.io/blog/assets/pdf/Fontes%20Abertas%20de%20Intelig%C3%AAncia%20(OSINT)_Estrat%C3%A9gias%20para%20Garantir%20a%20Integridade%20e%20Admissibilidade%20em%20Investiga%C3%A7%C3%B5es%20Forenses%20Digitais.pdf" target="_blank"><i class="fa fa-book"></i>Fontes Abertas de Inteligência (OSINT): Estratégias para Garantir a Integridade e Admissibilidade em Investigações Forenses Digitais.</a>
-            <a href="mailto:me@lucassouza.io" target="_blank"><i class="fa fa-envelope"></i> me@lucassouza.io</a>
+            <a href="https://lucassouza.io/blog/assets/pdf/Fontes%20Abertas%20de%20Intelig%C3%AAncia%20(OSINT)_Estrat%C3%A9gias%20para%20Garantir%20a%20Integridade%20e%20Admissibilidade%20em%20Investiga%C3%A7%C3%B5es%20Forenses%20Digitais.pdf" target="_blank"><i class="fa fa-book"></i> TCC: Fontes Abertas de Inteligência (OSINT)</a>
+            <a href="mailto:lucass@example.com" target="_blank"><i class="fa fa-envelope"></i> Email</a>
         </div>
     </div>
 
     <footer>
         &copy; 2024 Lucas S. All rights reserved.
     </footer>
-
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
