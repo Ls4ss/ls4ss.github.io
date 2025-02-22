@@ -169,9 +169,14 @@
             Adicione mais certificações conforme necessário -->
         </div>
     </div>
-
     <footer>
-        &copy; 2024 Lucas S. Todos os direitos reservados.
+        &copy; <span id="current-year"></span> Lucas S. All rights reserved.
     </footer>
+
+    <script>
+        // Script para atualizar o ano automaticamente
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
