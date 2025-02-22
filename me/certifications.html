@@ -55,6 +55,10 @@
             width: 250px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .certification-card:hover {
@@ -66,11 +70,14 @@
             width: 100%;
             border-radius: 8px;
             margin-bottom: 15px;
+            height: 150px; /* Altura fixa para as imagens */
+            object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
         }
 
         .certification-card h3 {
             font-size: 1.2rem;
             margin: 10px 0;
+            flex-grow: 1; /* Faz o título ocupar o espaço restante */
         }
 
         .certification-card p {
@@ -89,6 +96,8 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background 0.3s;
+            width: 100%; /* Botão ocupa toda a largura do card */
+            text-align: center;
         }
 
         .certification-card a:hover {
@@ -135,7 +144,7 @@
                 <a href="https://example.com/verify-cert3" target="_blank" rel="noopener noreferrer">Verificar</a>
             </div>
 
-             Adicione mais certificações conforme necessário -->
+            Adicione mais certificações conforme necessário -->
         </div>
     </div>
 
