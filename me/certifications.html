@@ -24,7 +24,7 @@
 
         .container {
             text-align: center;
-            max-width: 800px;
+            max-width: 1200px; /* Aumentei a largura máxima para telas maiores */
             width: 90%;
             margin: 20px auto;
         }
@@ -52,13 +52,14 @@
             background: linear-gradient(135deg, #2a2a2a, #1b1b1b);
             border-radius: 10px;
             padding: 20px;
-            width: 250px;
+            flex: 1 1 calc(33.333% - 40px); /* Ajuste para 3 cards por linha */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
+            max-width: 300px; /* Largura máxima para cada card */
         }
 
         .certification-card:hover {
@@ -126,6 +127,19 @@
             font-size: 0.9rem;
             color: #888888;
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .certification-card {
+                flex: 1 1 calc(50% - 40px); /* 2 cards por linha em telas médias */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .certification-card {
+                flex: 1 1 100%; /* 1 card por linha em telas pequenas */
+            }
+        }
     </style>
 </head>
 <body>
@@ -157,7 +171,7 @@
                 <a href="https://pdf.credential.net/vpnk5opm_1739791544029.pdf" target="_blank" rel="noopener noreferrer">Verificar</a>
             </div>
 
-            <!-- Certificação 3
+            <!-- Certificação 3 -->
             <div class="certification-card">
                 <img src="assets/images/cert3.jpg" alt="Certificação 3">
                 <h3>Offensive Security Certified Professional (OSCP)</h3>
@@ -166,9 +180,10 @@
                 <a href="https://example.com/verify-cert3" target="_blank" rel="noopener noreferrer">Verificar</a>
             </div>
 
-            Adicione mais certificações conforme necessário -->
+            <!-- Adicione mais certificações conforme necessário -->
         </div>
     </div>
+
     <footer>
         &copy; <span id="current-year"></span> Lucas S. All rights reserved.
     </footer>
@@ -177,6 +192,5 @@
         // Script para atualizar o ano automaticamente
         document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
-
 </body>
 </html>
