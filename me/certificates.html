@@ -15,18 +15,17 @@
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(135deg, #1b1b1b, #2a2a2a, #4c0000);
             color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             min-height: 100vh;
+            display: block;
+            padding: 20px 0;
         }
 
         .container {
             text-align: center;
-            max-width: 1200px; /* Aumentei a largura máxima para telas maiores */
+            max-width: 1200px;
             width: 90%;
-            margin: 20px auto;
+            margin: 0 auto;
+            padding: 20px 0;
         }
 
         h1 {
@@ -52,14 +51,14 @@
             background: linear-gradient(135deg, #2a2a2a, #1b1b1b);
             border-radius: 10px;
             padding: 20px;
-            flex: 1 1 calc(33.333% - 40px); /* Ajuste para 3 cards por linha */
+            flex: 1 1 calc(33.333% - 40px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s, box-shadow 0.3s;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            max-width: 300px; /* Largura máxima para cada card */
+            max-width: 300px;
         }
 
         .certification-card:hover {
@@ -71,14 +70,14 @@
             width: 100%;
             border-radius: 8px;
             margin-bottom: 15px;
-            height: 150px; /* Altura fixa para as imagens */
-            object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+            height: 150px;
+            object-fit: cover;
         }
 
         .certification-card h3 {
             font-size: 1.2rem;
             margin: 10px 0;
-            flex-grow: 1; /* Faz o título ocupar o espaço restante */
+            flex-grow: 1;
         }
 
         .certification-card p {
@@ -97,7 +96,7 @@
             border-radius: 5px;
             font-weight: bold;
             transition: background 0.3s;
-            width: 100%; /* Botão ocupa toda a largura do card */
+            width: 100%;
             text-align: center;
         }
 
@@ -128,16 +127,49 @@
             color: #888888;
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
             .certification-card {
-                flex: 1 1 calc(50% - 40px); /* 2 cards por linha em telas médias */
+                flex: 1 1 calc(50% - 40px);
+            }
+            
+            h1 {
+                font-size: 2rem;
             }
         }
 
         @media (max-width: 480px) {
+            body {
+                padding: 10px 0;
+            }
+            
+            .container {
+                padding: 10px 0;
+            }
+            
             .certification-card {
-                flex: 1 1 100%; /* 1 card por linha em telas pequenas */
+                flex: 1 1 100%;
+                margin: 10px 0;
+                max-width: none;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+                margin: 15px 0;
+            }
+            
+            h2 {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            
+            footer {
+                margin-top: 20px;
+                padding: 0 15px;
+            }
+            
+            .back-button {
+                margin-bottom: 15px;
+                padding: 8px 16px;
             }
         }
     </style>
@@ -147,13 +179,11 @@
         <h1>Licenças & Certificações</h1>
         <h2>Confira abaixo minhas principais certificações em Cybersecurity e Offensive Security.</h2>
 
-        <!-- Botão "Voltar à Página Inicial" -->
         <a href="index.html" class="back-button">
             <i class="fa fa-arrow-left"></i> Voltar à Página Inicial
         </a>
 
         <div class="certifications">
-            <!-- Certificação 1 -->
             <div class="certification-card">
                 <img src="assets/images/Desec_Certified_Professional.png" alt="Desec Certified Penetration Tester - [ DCPT ]">
                 <h3>Desec Certified Penetration Tester<br>[ DCPT ]</h3>
@@ -162,7 +192,6 @@
                 <a href="https://desecsecurity.com/valida-certificacao/FNDZ-JTPJE-QGNF" target="_blank" rel="noopener noreferrer">Verificar</a>
             </div>
 
-            <!-- Certificação 2 -->
             <div class="certification-card">
                 <img src="assets/images/CRTA-badge.png" alt="Certified Red Team Analyst - [ CRTA ]">
                 <h3>Certified Red Team Analyst<br>[ CRTA ]</h3>
@@ -170,16 +199,7 @@
                 <p>Data: Fevereiro 2025</p>
                 <a href="https://pdf.credential.net/vpnk5opm_1739791544029.pdf" target="_blank" rel="noopener noreferrer">Verificar</a>
             </div>
-
-            <!-- Certificação 3
-            <div class="certification-card">
-                <img src="assets/images/cert3.jpg" alt="Certificação 3">
-                <h3>Offensive Security Certified Professional (OSCP)</h3>
-                <p>Emissor: Offensive Security</p>
-                <p>Data: Julho 2021</p>
-                <a href="https://example.com/verify-cert3" target="_blank" rel="noopener noreferrer">Verificar</a>
-            </div>
-
-             Adicione mais certificações conforme necessário -->
         </div>
     </div>
+</body>
+</html>
