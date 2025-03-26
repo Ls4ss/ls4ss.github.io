@@ -135,6 +135,28 @@
             color: #ff4444;
             text-decoration: none;
         }
+        
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #ff4444, #a30000);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background: linear-gradient(135deg, #a30000, #ff4444);
+            transform: translateY(-5px);
+        }
+        
+        .back-button {
+                margin-bottom: 15px;
+                padding: 8px 16px;
+            }
 
         /* Responsividade */
         @media (max-width: 768px) {
@@ -166,7 +188,9 @@
                 <a href="../certifications"><i class="fa fa-certificate"></i> Certificações</a>
             </div>
         </header>
-
+     <a href="../me" class="back-button">
+            <i class="fa fa-arrow-left"></i> Página Inicial
+        </a>
         <section id="resumo">
             <h2 class="section-title">Resumo Profissional</h2>
             <div class="experience-card">
