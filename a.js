@@ -1,0 +1,1 @@
+<scrpit>alert('Funfa')</scrpit>
