@@ -104,9 +104,9 @@
             transform: translateY(-5px);
         }
 
-        /* Botão DetecTI - azul escuro sólido */
+        /* Botão DetecTI - com gradiente igual aos vermelhos */
         .btn-detecti {
-            background: #0C184B;
+            background: linear-gradient(135deg, #8C52FF, #0C184B);
             border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
@@ -115,7 +115,7 @@
             white-space: nowrap;
         }
 
-        /* Hover com gradiente invertido e destaque no tom claro */
+        /* Hover mantido como estava */
         .btn-detecti:hover {
             background: linear-gradient(135deg, #0C184B, #8C52FF);
             transform: translateY(-5px);
@@ -140,7 +140,7 @@
         }
 
         .detecti-junto .ti-destaque {
-            color: #8C52FF;
+            color: #0C184B;  /* Azul escuro para destaque no gradiente claro-escuro */
             font-weight: 800;
         }
 
@@ -150,15 +150,14 @@
             margin-left: 4px;
         }
 
-        /* Hover mantém cores mas com destaque */
+        /* Hover - letras mantidas */
         .btn-detecti:hover .detec,
         .btn-detecti:hover .seguranca-digital {
             color: #ffffff;
         }
         
         .btn-detecti:hover .ti-destaque {
-            color: #ffffff;
-            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+            color: #8C52FF;  /* Roxo claro no hover */
         }
 
         footer {
@@ -180,7 +179,7 @@
         <h2>Cybersecurity | Red Team Engineer</h2>
 
         <div class="buttons">
-            <!-- BOTÃO DETECTI - SEM ÍCONE, COR ESCURA, TI DESTACADO CLARO -->
+            <!-- BOTÃO DETECTI - COM GRADIENTE IGUAL AOS VERMELHOS -->
             <a href="https://detecti.com.br" target="_blank" class="btn-detecti">
                 <div class="empresa-nome">
                     <div class="detecti-junto">
