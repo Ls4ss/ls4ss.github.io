@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lucas S. - Cybersecurity</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Font Awesome 4.7.0 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="me" href="https://infosec.exchange/@ls4ss">
     <style>
         body {
@@ -22,6 +22,8 @@
 
         .container {
             text-align: center;
+            max-width: 600px;
+            padding: 0 20px;
         }
 
         .profile-pic {
@@ -75,22 +77,88 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            margin-top: 10px;
         }
 
+        /* ESTILO PADRÃO PARA TODOS OS BOTÕES */
         .buttons a {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 15px 30px;
-            background: linear-gradient(135deg, #ff4444, #a30000);
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             border-radius: 8px;
-            transition: background 0.2s, transform 0.2s;
+            transition: all 0.2s ease;
+            text-align: center;
         }
 
-        .buttons a:hover {
+        /* Botão padrão (vermelho) */
+        .btn-padrao {
+            background: linear-gradient(135deg, #ff4444, #a30000);
+        }
+
+        .btn-padrao:hover {
             background: linear-gradient(135deg, #a30000, #ff4444);
             transform: translateY(-5px);
+        }
+
+        /* Botão DetecTI - azul escuro sólido */
+        .btn-detecti {
+            background: #0C184B;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            white-space: nowrap;
+        }
+
+        /* Hover com gradiente invertido e destaque no tom claro */
+        .btn-detecti:hover {
+            background: linear-gradient(135deg, #0C184B, #8C52FF);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(140, 82, 255, 0.4);
+        }
+
+        /* Container do nome da empresa */
+        .empresa-nome {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* DetecTI junto */
+        .detecti-junto {
+            display: flex;
+            align-items: center;
+        }
+
+        .detecti-junto .detec {
+            color: #ffffff;
+        }
+
+        .detecti-junto .ti-destaque {
+            color: #8C52FF;
+            font-weight: 800;
+        }
+
+        .seguranca-digital {
+            color: #ffffff;
+            font-weight: bold;
+            margin-left: 4px;
+        }
+
+        /* Hover mantém cores mas com destaque */
+        .btn-detecti:hover .detec,
+        .btn-detecti:hover .seguranca-digital {
+            color: #ffffff;
+        }
+        
+        .btn-detecti:hover .ti-destaque {
+            color: #ffffff;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
         }
 
         footer {
@@ -107,17 +175,26 @@
             <a class="social-icon" href="https://www.exploit-db.com/?author=11020" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i></a>
             <a class="social-icon" href="https://github.com/Ls4ss" target="_blank"><i class="fa fa-github"></i></a>
             <a class="social-icon" href="https://www.linkedin.com/in/olucassouza/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <!--<a class="social-icon" href="https://www.instagram.com/lucassouza.io/" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a class="social-icon" href="https://x.com/L50uz4" target="_blank"><i class="fa fa-twitter"></i></a>-->
         </div>
         <h1>Lucas S.</h1>
         <h2>Cybersecurity | Red Team Engineer</h2>
 
         <div class="buttons">
-            <a href="https://lucassouza.io/resume" target="_blank"><i class="fa fa-briefcase"></i>Resumo Profissional</a>
-            <a href="https://lucassouza.io/certifications" target="_blank"><i class="fa fa-certificate"></i> Licenças & Certificações</a>
-            <a href="https://lucassouza.io/lab/" target="_blank"><i class="fa fa-flask"></i> Projetos & Pesquisas</a>
-            <a href="mailto:me@lucassouza.io" target="_blank"><i class="fa fa-envelope"></i> Email</a>
+            <!-- BOTÃO DETECTI - SEM ÍCONE, COR ESCURA, TI DESTACADO CLARO -->
+            <a href="https://detecti.com.br" target="_blank" class="btn-detecti">
+                <div class="empresa-nome">
+                    <div class="detecti-junto">
+                        <span class="detec">Detec</span>
+                        <span class="ti-destaque">TI</span>
+                    </div>
+                    <span class="seguranca-digital">Segurança Digital</span>
+                </div>
+            </a>
+
+            <a href="https://lucassouza.io/resume" target="_blank" class="btn-padrao"><i class="fa fa-briefcase"></i> Resumo Profissional</a>
+            <a href="https://lucassouza.io/certifications" target="_blank" class="btn-padrao"><i class="fa fa-certificate"></i> Licenças & Certificações</a>
+            <a href="https://lucassouza.io/lab/" target="_blank" class="btn-padrao"><i class="fa fa-flask"></i> Projetos & Pesquisas</a>
+            <a href="mailto:me@lucassouza.io" target="_blank" class="btn-padrao"><i class="fa fa-envelope"></i> Email</a>
         </div>
     </div>
 
@@ -126,10 +203,7 @@
     </footer>
 
     <script>
-        // Script para atualizar o ano automaticamente
         document.getElementById("current-year").textContent = new Date().getFullYear();
     </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src=//123.ezxss.com></script>
 </body>
 </html>
